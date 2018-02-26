@@ -1,0 +1,30 @@
+{
+  "name": "sfvalidator",
+  "version": "1.0.0",
+  "description": "Dataset validator",
+  "main": "./bin/validator.js",
+  "bin": {
+    "sfvalidator": "validator.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartflanders/sfvalidator.git"
+  },
+  "author": "Smart Flanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartflanders/sfvalidator/issues"
+  },
+  "homepage": "https://github.com/smartflanders/sfvalidator#readme",
+  "dependencies": {
+    "detect-browser": "^2.1.0",
+    "fetch-ponyfill": "^5.0.1",
+    "ldfetch": "0.0.10"
+  }
+}
