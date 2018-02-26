@@ -54,7 +54,7 @@ sfv.validate_url("https:://www.example.com").then(result => { console.log(result
    
 3. Then use browserify to bundle the module and its dependencies:
 			
-		browserify <path-to-module>/bin/validator_browser.js -o bundle.js
+		browserify <path-to-module>/lib/validator_browser.js -o bundle.js
 
 4. Now you are able to include this bundle as a script in your webpage and use it:
 
