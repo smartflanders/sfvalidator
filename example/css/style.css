@@ -1,0 +1,55 @@
+body{
+	background: #e8f0ff;
+	text-align: center;
+}
+
+.passed, a .passed{
+	color: green;
+}
+.failed{
+	color: red;
+}
+.not-checked{
+	color: orange;
+}
+
+#wrapper{
+	max-width: 1000px;
+	margin: auto;
+	border-radius: 20px;
+
+	background: white;
+	padding: 10px;
+}
+
+#url_text{
+	width: 400px;
+}
+
+#validator_results{
+	margin-top: 20px;
+	text-align: left;
+}
+
+table{
+	border-collapse: collapse;
+	margin: auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+th{
+	text-align: center
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}

@@ -37,7 +37,7 @@ Check for hydra links and timestamps
 #### Node
 First install the package:
 ```
-npm i -s sfvalidator
+npm install sfvalidator
 ```
 Then require it and start validating:
 ```javascript
@@ -46,40 +46,54 @@ const sfv = require("sfvalidator")
 sfv.validate_url("https:://www.example.com").then(result => { console.log(result); }
 ```
 
+#### Terminal
+Install the package globaly:
+```
+npm install -g sfvalidator
+```
+
+Now you are able to run:
+```
+sfvalidator <URL>
+sfvalidator --file <file-path>
+```
+
 #### In-browser
 1. Firstly install or download the module.
 2. Secondely install browserify:
 
-   		npm i -g browserify
+   		npm install -g browserify
    
 3. Then use browserify to bundle the module and its dependencies:
 			
-		browserify <path-to-module>/lib/validator_browser.js -o bundle.js
+		browserify <path-to-module>/lib/browserify-validator.js -o bundle.js
 
 4. Now you are able to include this bundle as a script in your webpage and use it:
 
 		<script src="bundle.js"></script>
 		<script>
-			validator = window.sfvalidator;
+			validator = new window.sfvalidator();
 			validator.validate_url("https:://www.example.com").then(result => { console.log(result); }
 		</script>
+
+See the `example` folder for a more extensive example. 
 		
 ## Output
 ```javascript
 {
-	accessable: { 
+	Accessable: { 
 		first_attempt: Score,
 	  	seconde_attempt: Score
 	},
-	license: Score,
-	headers: { 
-		cache: Score,
-	   	etag: Score,
-	   	cors: Score
+	License: Score,
+	Headers: { 
+		Cache: Score,
+	   	ETag: Score,
+	   	Cors: Score
 	},
-	rdf: Score,
-	fragmented: Score,
-	timestamped: Score
+	Rdf: Score,
+	Fragmented: Score,
+	Timestamped: Score
 }
 ```
 
@@ -94,3 +108,11 @@ The `message` attribute can have different values when the element passed the va
 	- In case of `accessable`, `rdf` and `timestamped` it is just a string.
 	- In case of the `headers` it is the value of the header in the returned package.
 	- In case of `license` and `fragmented` it is a list of found licenses and hydra links respectfully.
+
+## Examples
+
+####Terminal
+Run `npm test`.
+
+#### In-browser
+Run `npm run-script build-example` and then run an http server in the `example` folder.

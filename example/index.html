@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Validator</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			<h1>Smart Flanders Dataset Validator</h1>
+
+			<form onsubmit="send_to_validator(); return false">
+				<input type="text" value="https://linked.open.gent/parking?page=2018-02-14T13:00:00" name="url" id="url_text">
+				<button type="submit">Validate</button>
+			</form>
+
+			<div id="validator_results"></div>
+		</div>
+
+		<script src="bundle.js"></script>
+		<script type="text/javascript">
+			var validator = new window.sfvalidator("validator_results");
+
+			var send_to_validator = function(){
+				validator.validate_url(document.getElementById("url_text").value);
+			}
+		</script>
+	</body>
+</html>

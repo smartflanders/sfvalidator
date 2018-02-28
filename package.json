@@ -2,15 +2,14 @@
   "name": "sfvalidator",
   "version": "1.0.12",
   "description": "Dataset validator",
-  "main": "./bin/validator.js",
+  "main": "./lib/validator.js",
   "bin": {
-    "sfvalidator": "./bin/validator.js"
-  },
-  "directories": {
-    "lib": "lib"
+    "sfvalidator": "./bin/validate.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./bin/validate.js https://linked.open.gent/parking?page=2018-02-14T13:00:00",
+    "build": "browserify ./lib/browserify-validator.js -o bundle.js",
+    "build-example": "browserify ./lib/browserify-validator.js -o example/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +22,12 @@
   },
   "homepage": "https://github.com/smartflanders/sfvalidator#readme",
   "dependencies": {
+    "chalk": "^2.3.1",
+    "cli-table": "^0.3.1",
+    "commander": "^2.14.1",
     "detect-browser": "^2.1.0",
     "fetch-ponyfill": "^5.0.1",
-    "ldfetch": "0.0.10"
+    "ldfetch": "0.0.10",
+    "minimist": "^1.2.0"
   }
 }
