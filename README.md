@@ -105,14 +105,16 @@ A `Score` is of this structure:
 }
 ```
 The `message` attribute can have different values when the element passed the validation:
-	- In case of `accessable`, `rdf` and `timestamped` it is just a string.
-	- In case of the `headers` it is the value of the header in the returned package.
-	- In case of `license` and `fragmented` it is a list of found licenses and hydra links respectfully.
+- In case of `accessable`, `rdf` and `timestamped` it is just a string.
+- In case of the `headers` it is the value of the header in the returned package.
+- In case of `license` and `fragmented` it is a list of found licenses and hydra links respectfully.
 
 ## Examples
 
 ####Terminal
-Run `npm test`.
+Run `./bin/validate.js https://linked.open.gent/parking`.
+
+Or run `./bin/validate.js --file example/url_examples.txt`
 
 #### In-browser
-Run `npm run-script build-example` and then run an http server in the `example` folder.
+Run `npm run-script build-example` and then run an http server in the `example/in-browser` folder.
