@@ -4,7 +4,7 @@
   "description": "Dataset validator",
   "main": "./bin/validator.js",
   "bin": {
-    "sfvalidator": "validator.js"
+    "sfvalidator": "./bin/validator.js"
   },
   "directories": {
     "lib": "lib"
