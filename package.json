@@ -1,6 +1,6 @@
 {
   "name": "sfvalidator",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Dataset validator",
   "main": "./bin/validator.js",
   "bin": {
