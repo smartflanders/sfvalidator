@@ -1,6 +1,7 @@
 var config = {
 	headers: [
-		"Cache-Control"
+		"Cache-Control",
+		"ETag"
 	],
 	licenses: [
 		"http://purl.org/dc/terms/license",
@@ -95,7 +96,7 @@ class Validator{
 
 				//Check if we are in a browser, if so and the page loads we know that cors is set on the server because browser doesn't allow otherwise
 				if(this.detect_browser.name != "node")
-					this.report.headers.cors = new Score(1, "Page loade d, so assumed that CORS is supported");
+					this.report.headers.cors = new Score(1, "Page loaded, so assumed that CORS is supported");
 				else
 					this.check_header("Access-Control-Allow-Origin", response);
 
