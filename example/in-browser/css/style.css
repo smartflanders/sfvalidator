@@ -35,15 +35,15 @@ table{
 	border-collapse: collapse;
 	margin: auto;
     border-radius: 10px;
-    background-color: #f9f9f9;
 }
 
 th{
-	text-align: center
+	text-align: center;
+	font-size: 1.5em;
 }
 
-table, th, td {
-    border: 1px solid gray;
+td {
+    border: 1px solid #aaaaaa;
 }
 
 table tr:last-child td:first-child {

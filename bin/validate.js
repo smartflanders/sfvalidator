@@ -31,6 +31,6 @@ program
   })
   .parse(process.argv);
 
-if(!input)
+if(!input && !program.file)
 	console.error("Please provide a URL or file path with the option --file.");
 	

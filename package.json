@@ -9,7 +9,7 @@
   "scripts": {
     "test": "./bin/validate.js https://linked.open.gent/parking?page=2018-02-14T13:00:00",
     "build": "browserify ./lib/browserify-validator.js -o bundle.js",
-    "build-example": "browserify ./lib/browserify-validator.js -o example/bundle.js"
+    "build-example": "browserify ./lib/browserify-validator.js -o example/in-browser/bundle.js"
   },
   "repository": {
     "type": "git",
