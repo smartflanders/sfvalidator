@@ -43,7 +43,7 @@ Then require it and start validating:
 ```javascript
 const sfv = require("sfvalidator")
 
-sfv.validate_url("https:://www.example.com").then(result => { console.log(result); }
+sfv.validate_url("https://www.example.com").then(result => { console.log(result); }
 ```
 
 #### Terminal
@@ -81,7 +81,7 @@ See the `example` folder for a more extensive example.
 ## Output
 ```javascript
 {
-	Accessable: { 
+	Accessible: { 
 		first_attempt: Score,
 	  	seconde_attempt: Score
 	},
@@ -111,7 +111,7 @@ The `message` attribute can have different values when the element passed the va
 
 ## Examples
 
-####Terminal
+#### Terminal
 Run `./bin/validate.js https://linked.open.gent/parking`.
 
 Or run `./bin/validate.js --file example/url_examples.txt`
