@@ -27,7 +27,6 @@
     "commander": "^2.14.1",
     "detect-browser": "^2.1.0",
     "fetch-ponyfill": "^5.0.1",
-    "ldfetch": "0.0.10",
-    "minimist": "^1.2.0"
+    "ldfetch": "0.0.10"
   }
 }

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const args = require('minimist')(process.argv.slice(2));
 const program = require('commander');
 const validator = new (require("../lib/terminal-validator.js"))();
 
