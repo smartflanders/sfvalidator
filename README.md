@@ -118,3 +118,14 @@ Or run `./bin/validate.js --file example/url_examples.txt`
 
 #### In-browser
 Run `npm run-script build-example` and then run an http server in the `example/in-browser` folder.
+
+
+## Function Documentation
+
+- **validate_url**: Use this function to validate a url, returns a report. Takes a url as argument in the form of a string.
+- **validate_headers**: This function validates the headers of the package the server sends back. Takes a url as input and returns a promise with a report. This function gets called by `validate_url`.
+- **validate_rdf**: This function tries to parse the triples present in the data fetched from the url. Takes a url as argument and returns a promise that returns a report. Gets called by `validate_url`.
+- **validate_license**: Checks if there is a license on the data within the triples. Takes triples and the url as input and returns a score. This function gets called by `validate_rdf`.
+- **validate_fragmentation**: Searches for hydra links within the triples of the data that have the url as subject. Takes triples and the url as input and returns a score. Gets called by `validate_rdf`.
+- **validate_metadata**: Checks for the precense of triples with DCT or DCAT metadata predicates about the url. Takes triples and the url as input and returns a score. Gets called by `validate_rdf`.
+- **validate_timestamped**: Checks if the file is timestamped. Takes triples and the url as input and returns a score. Gets called by `validate_rdf`.

@@ -35,6 +35,9 @@ table{
 	border-collapse: collapse;
 	margin: auto;
     border-radius: 10px;
+
+    /*Respect \n characters*/
+	white-space: pre-line;
 }
 
 th{
@@ -52,4 +55,8 @@ table tr:last-child td:first-child {
 
 table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
+}
+
+span{
+	font-weight: 800;
 }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "browserify ./lib/browserify-validator.js -o bundle.js",
-    "build-example": "browserify ./lib/browserify-validator.js -o example/in-browser/bundle.js"
+    "build-example": "browserify ./lib/browserify-table-validator.js -o example/in-browser/bundle.js"
   },
   "repository": {
     "type": "git",
