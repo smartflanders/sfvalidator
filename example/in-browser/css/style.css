@@ -1,48 +1,48 @@
 body{
-	background: #e8f0ff;
-	text-align: center;
+  background: #e8f0ff;
+  text-align: center;
 }
 
 .passed, a .passed{
-	color: green;
+  color: green;
 }
 .failed{
-	color: red;
+  color: red;
 }
 .not-checked{
-	color: orange;
+  color: orange;
 }
 
 #wrapper{
-	max-width: 1000px;
-	margin: auto;
-	border-radius: 20px;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 20px;
 
-	background: white;
-	padding: 10px;
+  background: white;
+  padding: 10px;
 }
 
 #url_text{
-	width: 400px;
+  width: 400px;
 }
 
 #validator_results{
-	margin-top: 20px;
-	text-align: left;
+  margin-top: 20px;
+  text-align: left;
 }
 
 table{
-	border-collapse: collapse;
-	margin: auto;
+  border-collapse: collapse;
+  margin: auto;
     border-radius: 10px;
 
     /*Respect \n characters*/
-	white-space: pre-line;
+  white-space: pre-line;
 }
 
 th{
-	text-align: center;
-	font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 td {
@@ -58,5 +58,5 @@ table tr:last-child td:last-child {
 }
 
 span{
-	font-weight: 800;
+  font-weight: 800;
 }
